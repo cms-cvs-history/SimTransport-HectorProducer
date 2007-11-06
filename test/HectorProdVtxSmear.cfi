@@ -1,6 +1,6 @@
    module LHCTransport = HectorProducer
    {
-	string HepMCProductLabel = "VtxSmeared"
+	string HepMCProductLabel = "source"
 	PSet Hector = {
 	    double BeamLineLength    = 500.
 	    bool   Verbosity         = true
