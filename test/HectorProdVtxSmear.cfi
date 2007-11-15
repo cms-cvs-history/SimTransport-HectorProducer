@@ -13,6 +13,8 @@
 	    double RP220f            = 220. 
 	    double RP220b            = 220. 
 	    double SigmaE            = 0. 
+	    string Beam1	     = "SimTransport/HectorData/LHCB1IR5_v6.500.tfs"
+	    string Beam2	     = "SimTransport/HectorData/LHCB2IR5_v6.500.tfs" 
 	}
    }
 
