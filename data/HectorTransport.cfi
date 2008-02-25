@@ -6,11 +6,13 @@
 	    double BeamLineLengthFP420 = 430.
 	    double RP420f              = 419. 
 	    double RP420b              = 419.
-#	    double BeamLineLengthZDC   = 140.
-#	    double BeamLineLengthD1    = 105.
-	    double BeamLineLengthZDC   = 0.
-	    double BeamLineLengthD1    = 0.
-	    bool   smearAng          = true
+	    double BeamLineLengthZDC   = 140. # put = 0.0 to swich off filterZDC
+	    double BeamLineLengthD1    = 105. # put = 0.0 to swich off filterZDC
+	    double InnerPipeRadius     = 3.5 #mm
+	    double XpipeCenterAtZ140   = 0.0 #mm
+	    double YpipeCenterAtZ140   = 0.0 #mm
+	    double AddEtaCut           = 8.2 
+	    bool   smearAng            = true
 	    string Beam1	       = "SimTransport/HectorProducer/data/LHCB1IR5_v6.500.tfs"
 	    string Beam2	       = "SimTransport/HectorProducer/data/LHCB2IR5_v6.500.tfs" 
 	}
