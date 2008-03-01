@@ -2,15 +2,20 @@
    {
 	string HepMCProductLabel = "source"
 	bool   Verbosity           = false
-	bool   FP420Transport      = true
-	bool   ZDCTransport        = true
+	bool   FP420Transport      = true # main flag to set transport for FP420
+	bool   ZDCTransport        = true # main flag to set transport for ZDC
 	PSet Hector = {
-	    double BeamLineLengthFP420 = 430.
-	    double RP420f              = 419. 
-	    double RP420b              = 419.
-	    double BeamLineLengthZDC   = 140.
-	    double BeamLineLengthD1    = 105.
+	    double BeamLineLengthFP420 = 430. # length of beam line for FP420: important for aperture checks
+	    double RP420f              = 419. # distance of transport in clockwise dir. for FP420
+	    double RP420b              = 419. # distance of transport in anti-clockwise dir. for FP420
+	    double BeamLineLengthZDC   = 140. # length of beam line for ZDC: important for aperture checks
+	    double BeamLineLengthD1    = 105. # distance of transport for ZDC case, length of beam line 
 	    bool   smearAng            = true
+	    double sigmaSTX            = 0.     # x angle dispersion at IP (m)
+	    double sigmaSTY            = 0.     # y angle dispersion at IP (m)
+	    bool   smearEnergy         = true
+	    double sigmaEnergy         = 0.     # beam energy dispersion (GeV)
+	    double EtaCut              = 8.2    # forward particles added in event for |eta|> EtaCut
 	    string Beam1	       = "SimTransport/HectorProducer/data/LHCB1IR5_v6.500.tfs"
 	    string Beam2	       = "SimTransport/HectorProducer/data/LHCB2IR5_v6.500.tfs" 
 	}
